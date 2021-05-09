@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE｜始終陪伴在你身旁。</title>
+    <link rel="icon" href="https://image.knowing.asia/e4a5354b-2016-4064-949e-d0defae4cee1/51a1c7e533ab2bd97f6d8a0c0e80f3be.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        .head {
+            position: fixed;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: white;
+            display: flex;
+            border-bottom: 1px solid rgb(216, 212, 212);
+            height: 70px;
+            align-items: center;
+            font-family: LINESeed, sans-serif;
+
+
+        }
+
+        .line {
+            margin-left: 20px;
+
+        }
+
+        .head a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .meun {
+            width: 400px;
+            font-size: 16px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+
+        }
+
+        .meun li {
+            text-decoration: none;
+        }
+
+        .meun li:first-child {
+            border-bottom: 4px solid black;
+        }
+
+        .tw {
+            margin-right: 30px;
+        }
+
+        .big {
+            background-image: url("line.jpg");
+            width: 100%;
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            font-family: LINESeed, sans-serif;
+
+        }
+
+        .big h2 {
+            font-size: 140px;
+            margin-left: 150px;
+            font-weight: bold;
+
+        }
+
+        .big h3 {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+
+        .big p {
+            width: 100px;
+            height: 50px;
+            margin: 50px 0 10px 150px;
+        }
+
+        .download {
+            margin-left: 150px;
+
+        }
+
+        .download a {
+            font-size: 25px;
+            color: white;
+            border: 1px solid white;
+            padding: 20px;
+        }
+
+        .life h3 {
+            font-size: 70px;
+            text-align: center;
+            font-family: LINESeed, sans-serif;
+            font-weight: bold;
+            margin: 60px 0 30px 0;
+        }
+
+        .life p {
+            font-size: 20px;
+            text-align: center;
+            color: gray;
+            font-weight: bold;
+            margin-bottom: 80px;
+        }
+
+        .center {
+            width: 1600px;
+            height: 750px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .center .item {
+            width: 700px;
+            margin: auto;
+        }
+
+        .center img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .today img {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-radius: 20%;
+        }
+
+        .center h2 {
+            font-size: 40px;
+            font-family: LINESeed, sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+
+        .center h3 {
+            font-size: 20px;
+            color: rgb(67, 187, 67);
+            margin-bottom: 20px;
+        }
+
+        .center p {
+            font-family: LINESeed, sans-serif;
+            font-size: 20px;
+            color: gray;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .other a {
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid rgb(216, 213, 213);
+            padding: 20px;
+        }
+
+        .other a:hover {
+            background-color: rgb(21, 190, 21);
+            color: white;
+        }
+
+        .six {
+            background-color: rgb(255, 250, 250);
+            height: 1300px;
+        }
+
+        .six h3 {
+            font-size: 60px;
+            font-family: LINESeed, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+
+        .six p {
+            width: 1200px;
+            font-size: 20px;
+            color: gray;
+            font-family: LINESeed, sans-serif;
+            margin: auto auto 100px auto;
+            text-align: center;
+        }
+
+        .phone {
+            width: 1200px;
+            height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+
+        }
+
+        .six .item {
+            width: 400px;
+        }
+
+        .six .item img {
+            width: 100%;
+        }
+
+        .six h4 {
+            font-size: 25px;
+            text-align: center;
+            font-family: LINESeed, sans-serif;
+            font-weight: bold;
+            margin: 20px auto 10px auto;
+        }
+
+        .six .item div {
+            width: 300px;
+            font-size: 15px;
+            text-align: center;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .hand {
+            height: 300px;
+            background-image: url("https://picsum.photos/2000/300/?random=1");
+        }
+
+        .hand a {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .down h3 {
+            font-size: 60px;
+            text-align: center;
+            font-weight: bold;
+            margin: 100px auto 100px auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="head">
+
+        <div class="line">
+            <a href="#"><img src="https://line.me/static/940874c48d2369be137d812b15491843/ff8e8/icon-title-pc.png"
+                    alt=""></a>
+        </div>
+
+        <ul class="meun">
+            <li>
+                <h1><a href="#">Life on LINE</a></h1>
+            </li>
+            <li><a href="#">通訊軟體</a></li>
+            <li><a href="#">服務總覽</a></li>
+        </ul>
+
+        <div class="tw">
+            <a href="#">
+                <i class="fas fa-globe"></i>
+                TW
+                <i class="fas fa-caret-down"></i>
+            </a>
+            </a>
+        </div>
+    </div>
+    <div class="big">
+        <h2>Life on LINE</h2>
+        <h3>LINE始終陪伴在你身旁。</h3>
+        <p>
+            <img src="https://line.me/static/0d83b930b5aea21458844be1f39fdfaf/15377/icon-line-w.png" alt=""> 下載
+        </p>
+        <div class="download">
+            <a href="#"><i class="fab fa-apple"></i></a>
+            <a href="#"><i class="fab fa-google-play"></i></a>
+            <a href="#"><i class="fas fa-desktop"></i></a>
+        </div>
+    </div>
+    <div class="life">
+        <h3>Life on LINE</h3>
+        <p>超越通訊軟體，LINE為用戶建構全新的溝通型態與豐富的數位生活，成為用戶生活中不可或缺的平台。</p>
+    </div>
+
+
+    <div class="center">
+
+        <div class="item">
+            <div class="left">
+                <div class="today">
+                    <img src="linepic/linetoday.png" alt="">
+                </div>
+                <h2>LINE TODAY</h2>
+                <h3>隨點隨看 生活快充</h3>
+                <p>最即時的新聞、影音、運動賽事和娛樂內容直播，讓你話題永不斷線，LINE TODAY陪伴您的每一天！</p>
+                <div class="other">
+                    <a href="#"><i class="fas fa-external-link-alt"></i>其他詳細資訊</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="right">
+                <img src="https://line.me/static/fc6a34517fc06ee4b2c097f2de95cf17/bd486/0386be561893eaf8b3f444a3b7206b7a.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="item">
+            <div class="left">
+                <img src="https://line.me/static/29e4f0744025fe17447db54a9b8a845c/bd486/1bcc8626da1f1f11e331664223c7feba.png"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="right">
+                <div class="today">
+                    <img src="linepic/today2.png" alt="">
+                </div>
+                <h2>LINE貼文串</h2>
+                <h3>探索樂趣，分享生活</h3>
+                <p>在貼文串追蹤你的最愛．有感內容不錯過。
+                    打造你的個人閱知頻道，探索生活大小事。
+                    分享所見所聞，串連人際、啟發創意的無限可能！</p>
+                <div class="other">
+                    <a href="#"><i class="fas fa-external-link-alt"></i>其他詳細資訊</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center">
+        <div class="item">
+            <div class="left">
+                <div class="today">
+                    <img src="linepic/pay.png" alt="">
+                </div>
+                <h2>LINE Pay</h2>
+                <h3>付款、轉帳、生活繳費，輕鬆簡單又便利！</h3>
+                <p>付款簡單又便利，還能輕鬆轉帳給LINE好友，動動手指輕鬆完成日常生活各種帳單繳費， 免出門省時又省力。</p>
+                <div class="other">
+                    <a href="#"><i class="fab fa-apple" style="font-size: 20px;"></i></a>
+                    <a href="#"><i class="fab fa-google-play" style="font-size: 20px;"></i></a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>其他詳細資訊</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="right">
+                <img src="https://line.me/static/19dd7975bdc5e84a47db26e8a36159b2/bd486/91f2093486f63cacb05d3f0475e08153.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+
+        <div class="item">
+            <div class="left">
+                <img src="https://line.me/static/c18b76c50015ddb41ecfa6f2c7b23165/bd486/43f462d7375cd4867e6cd565756b5ac2.png"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="right">
+                <div class="today">
+                    <img src="linepic/buy.png" alt="">
+                </div>
+                <h2>LINE購物</h2>
+                <h3>先LINE購物再購物</h3>
+                <p>涵蓋各大購物、拍賣、精品、通路、旅遊、及票券商店，輕鬆貨比五百家，一站比價三千萬筆商品，再享LINE POINTS回饋賺不停！</p>
+                <div class="other">
+                    <a href="#"><i class="fab fa-apple" style="font-size: 20px;"></i></a>
+                    <a href="#"><i class="fab fa-google-play" style="font-size: 20px;"></i></a>
+                    <a href="#">
+                        <i class="fas fa-external-link-alt"></i>其他詳細資訊</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="item">
+            <div class="left">
+                <div class="TV">
+                    <img src="linepic/TV.png" alt="">
+                </div>
+
+                <h2>LINE TV</h2>
+                <h3>共享追劇生活</h3>
+                <p>和朋友一起追劇，不錯過最新、最熱門、最潮的話題大劇，即時分享娛樂影音，展開精彩生活故事，LINE TV是您的追劇第一選擇！</p>
+                <div class="other">
+                    <a href="#"><i class="fab fa-apple" style="font-size: 20px;"></i></a>
+                    <a href="#"><i class="fab fa-google-play" style="font-size: 20px;"></i></a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>其他詳細資訊</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="right">
+                <img src="https://line.me/static/19dd7975bdc5e84a47db26e8a36159b2/bd486/91f2093486f63cacb05d3f0475e08153.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="six">
+        <h3>通訊軟體</h3>
+        <p>一款全新型態的通訊軟體，讓您隨時隨地享受免費傳訊、免費通話等溝通樂趣。</p>
+
+        <div class="phone">
+            <div class="item">
+                <img src="https://line.me/static/fbbe196ede7521a82def4d3d48f7e502/8309f/0d067133c3c06f520074aca8e2175ba0.png"
+                    alt="">
+                <h4>聊天、語音通話&視訊通話</h4>
+                <div>能夠和好友一對一或多人群組訊息聊天，或是進行語音、視訊通話。</div>
+
+            </div>
+
+            <div class="item">
+                <img src="https://line.me/static/48cd9745c3bae4922389077081d9eef3/8309f/3ba4e4f273cbc6faf25705a9154d0ce6.png"
+                    alt="">
+                <h4>貼圖＆表情貼＆主題</h4>
+                <div>使用有趣的貼圖或表情貼豐富聊天，也能更換超讚的主題來表達自己。</div>
+            </div>
+
+            <div class="item">
+                <img src="https://line.me/static/933f03866f7418343c0fe505af85ed1c/8309f/d9d770c0876cab6a56cdc4d308abba67.png"
+                    alt="">
+                <h4>主頁</h4>
+                <div>可以快速連結 LINE 的各種服務，包含貼圖等多樣的內容資訊。</div>
+            </div>
+
+            <div class="item">
+                <img src="https://line.me/static/a2ea225d0212a1cd6db236cadd59e016/8309f/49fae47e154a66bfea7bfa3559e04483.png"
+                    alt="">
+                <h4>社群</h4>
+                <div>輕鬆分享共同興趣、開心聊出好麻吉。
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://line.me/static/af6fe8fe8c90155d612e89f87a6c02bc/8309f/e8184ef3c8da9a8eec9cbd127f709a96.png"
+                    alt="">
+                <h4>貼文串</h4>
+                <div>供你分享你的近況，或是瞭解好友的最新消息。透過「探索」功能，能找到更多你喜愛的內容。</div>
+            </div>
+
+            <div class="item">
+                <img src="https://line.me/static/9962ce7e72d4ba5721ee5bcab68d73b7/8309f/e3ba9b4f333191f18c8d467bb6e2b46f.png"
+                    alt="">
+                <h4>錢包</h4>
+                <div>使用「 LINE Pay 」可以進行安全方便的行動付款或轉帳，也能使用其他金融相關服務。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hand">
+        <a href="#">企業服務</a>
+    </div>
+
+    <div class="down">
+        <h3>服務總覽</h3>
+    </div>
+    <!-- <div class="last">
+        <div class="product">
+            <ul class="productMenu">
+                <li><button type="button" class="selected productCategory fontB">All Product</button></li>
+                <li><button type="button" class="productCategory fontB">通訊</button></li>
+                <li><button type="button" class="productCategory fontB">娛樂</button></li>
+                <li><button type="button" class="productCategory fontB">生活</button></li>
+                <li><button type="button" class="productCategory fontB">購物</button></li>
+                <li><button type="button" class="productCategory fontB">工具</button></li>
+                <li><button type="button" class="productCategory fontB">金融</button></li>
+                <li><button type="button" class="productCategory fontB">企業商務</button></li>
+                <li><button type="button" class="productCategory fontB">新聞資訊</button></li>
+                <li><button type="button" class="productCategory fontB">相機</button></li>
+                <li><button type="button" class="productCategory fontB">Games</button></li>
+            </ul>
+        </div> -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
