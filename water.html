@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <title>water</title>
+</head>
+<body>
+    
+    <div class="jumbotron bg-info text-center">
+        <h1>台灣水庫即時資訊</h1>
+    </div>
+
+    <div id="container">
+        
+    </div>
+
+
+    <script>
+        let titleArray = ['Item' , 'Name' , 'Capacity' , 'Percent'];
+        let dataArray = [
+            {item:1 , Name:'新山水庫(基隆)' , Capacity:'901.48萬立方公尺' , Percent: '89.9%' },
+            {item:2 , Name:'翡翠水庫(台北、新北)' , Capacity: '28160.95萬立方公尺' , Percent: '83.9%' },
+            {item:3 , Name:'石門水庫(新北、桃園、新竹)' , Capacity: '5125.54萬立方公尺' , Percent: '25.2%' },
+            {item:4 , Name:'永和山水庫(新竹、苗栗)' , Capacity: '449.24萬立方公尺' , Percent: '14.9%' },
+            {item:5 , Name:'寶山水庫(新竹)' , Capacity: '128.57萬立方公尺' , Percent: '25.5%' },
+        ];
+
+        let container = document.getElementById('container');
+        let table = document.createElement('table');
+        table.setAttribute("class", "table table-bordered table-striped table-secondary");
+
+        let thead = document.createElement('thead');
+        let tbody = document.createElement('tbody');
+
+        window.onload = function(){
+            createTable();
+            container.appendChild(table);
+        }
+
+
+        function createTable(){
+            Addthead(thead , titleArray);
+            Addtbody(tbody , dataArray);
+        }
+
+        function Addthead(target , dataArray){
+            let tr = document.createElement('tr');
+            dataArray.forEach(function(item){
+                let td = document.createElement('td');
+                let tdText = document.createTextNode(item);
+                td.appendChild(tdText);
+                tr.appendChild(td);
+            });
+            target.appendChild(tr);
+            table.appendChild(target);
+        }
+
+        function Addtbody(target , dataArray){
+            dataArray.forEach(function(item){
+                let tr = document.createElement('tr');
+                let values = Object.values(item);
+                values.forEach(function(item){
+                    let td = document.createElement('td');
+                    let tdText = document.createTextNode(item);
+                    td.appendChild(tdText);
+                    tr.appendChild(td);
+                });
+                target.appendChild(tr);
+                table.appendChild(target);
+            });
+        }
+
+    </script>
+</body>
+</html>
