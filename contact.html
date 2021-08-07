@@ -36,13 +36,21 @@
       text-decoration: none;
     }
 
-    .btn {
+    .btn-s {
+      width: 90px;
+      height: 35px;
       background-color: #fc8d61;
       color: white;
       margin-top: 20px;
+      border: none;
+      border-radius: 5%;
+      font-size: 15px;
     }
 
     .container input {
+      background-color: #f5f8fa;
+    }
+    .container textarea{
       background-color: #f5f8fa;
     }
 
@@ -98,7 +106,7 @@
 
 <body>
   <!-- nav -->
-  <div class="container mt-5">
+  <!-- <div class="container mt-5">
     <div class="row">
       <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -109,7 +117,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <!-- nav -->
 
 
@@ -158,9 +166,10 @@
     </div>
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Message</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+      
+      <textarea class="form-control" aria-label="With textarea"></textarea>
     </div>
-    <button class="btn">submit</button>
+    <button class="btn-s">submit</button>
   </div>
 
 
