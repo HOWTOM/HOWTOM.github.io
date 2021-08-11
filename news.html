@@ -42,7 +42,8 @@
 
         .swiper-container {
             width: 100%;
-            height: 400px;
+            height: 320px;
+            margin-bottom: 50px;
         }
 
         .swiper-slide {
@@ -94,8 +95,8 @@
         .swiper-slide a:hover {
             /* width: 135px; */
             /* font-size: 16px; */
-            background-color: #04A4CC;
-            /* transition: 0.2s; */
+            background-color: #5bbdc5;
+            /* transition: 0.1s; */
             /* transform: scale(1.1); */
             transform: scaleX(1.15);
 
@@ -123,13 +124,13 @@
             font-weight: bolder;
         }
         .swiper-pagination{
-            margin-bottom: 20px;
+            
         --swiper-theme-color:black;
         }
 
 
         .title {
-            margin-top: 100px;
+            margin-top: 80px;
             text-align: center;
         }
 
@@ -144,7 +145,11 @@
         .bg .row:nth-child(2) .col-sm-2 {
             margin: 10px;
         }
-
+        @media screen and (max-width:1023px){
+            .swiper-slide .row {
+                max-width: 600px;
+            }
+        }
 
         @media screen and (max-width:767px) {
             .banner {
@@ -169,6 +174,7 @@
                 height: 1000px;
             }
         }
+        
     </style>
 </head>
 
@@ -268,9 +274,9 @@
 
 
     <!-- Swiper2 -->
-    <div class="sw-bg" style="background-color: rgb(238, 238, 238);">
+    <div class="sw-bg pb-2" style="background-color: rgb(238, 238, 238);">
 
-        <div class="title pt-2">
+        <div class="title pt-5">
             <h3>Helping Local Businesses</h3>
         </div>
         <div class="swiper-container mySwiper">
